@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Roadworthy Certificate QLD: Compare Providers, Then Show Us Your Quote | Auto King</title>
+<meta name="description" content="Comparing mobile roadworthy providers in Queensland? See a dated side-by-side, then send us your written quote. Auto King comes to you and certifies on the spot. Call 1300 26 51 18.">
+
+<!-- Paid-only page. Matches the live roadworthy page (noindex, nofollow). Confirm with SEO Jay before changing. -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- GTM container snippet goes here (use the existing Auto King container; do not add a new one). -->
+
+<script>document.documentElement.className+=" js"</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+  /* ---------- Tokens (from the live Auto King roadworthy page CSS) ---------- */
+  :root{
+    --black:#000000; --ink:#0b0b0b; --panel:#161616; --line:#242424; --line-strong:#2a2a2a;
+    --neon:#39ff14; --neon-deep:#168f0c; --neon-line:#18b800;
+    --text:#ffffff; --muted:#d1d5db; --dim:#9ca3af; --gold:#ffd700;
+    --radius:8px; --radius-sm:6px;
+    --font:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    --wrap:1120px;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--black);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.55;padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+  img{max-width:100%;height:auto;display:block}
+  a{color:inherit}
+  h1,h2,h3{margin:0;font-weight:800;letter-spacing:-0.015em;text-wrap:balance}
+  p{margin:0} ul{margin:0;padding:0;list-style:none}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+  :focus-visible{outline:3px solid var(--neon);outline-offset:3px;border-radius:4px}
+  .num{font-variant-numeric:tabular-nums}
+
+  /* ---------- Buttons ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--radius);font:800 1rem/1 var(--font);text-decoration:none;cursor:pointer;border:0;transition:box-shadow .2s ease,background-color .2s ease,transform .1s ease}
+  .btn svg{width:20px;height:20px;flex:none}
+  .btn-call{background:var(--neon);color:#000;box-shadow:0 0 25px rgba(57,255,20,.35)}
+  .btn-call:hover{box-shadow:0 0 32px rgba(57,255,20,.5)}
+  .btn-ghost{background:transparent;color:var(--neon);border:2px solid var(--neon-line)}
+  .btn-ghost:hover{background:rgba(57,255,20,.08);border-color:var(--neon);box-shadow:0 0 24px rgba(57,255,20,.28)}
+  .btn:active{transform:translateY(1px)}
+  .btn-sm{min-height:44px;padding:0 18px;font-size:.875rem}
+
+  /* ---------- Strip + header ---------- */
+  .strip{background:var(--neon);color:#000;text-align:center;font-weight:800;font-size:.8125rem;line-height:1.3;padding:9px 16px}
+  .site-header{background:var(--black);border-bottom:1px solid var(--line)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+  .logo img{height:36px;width:auto}
+  .header-call .full{display:none}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;isolation:isolate;overflow:hidden;padding:40px 0 56px;border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;gap:36px}
+  .hero h1{font-size:clamp(2.1rem,8.2vw,3.9rem);line-height:1.06}
+  .hero .sub{margin-top:18px;color:var(--muted);font-size:1.0625rem;max-width:34rem}
+  .hero .sub strong{color:var(--text);font-weight:600}
+  .hero-cta{margin-top:26px;display:grid;gap:12px;max-width:26rem}
+  .hero-hint{margin-top:18px}
+  .hero-hint a{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:10px 18px;border-radius:999px;background:rgba(57,255,20,.12);border:1px solid var(--neon);color:var(--text);font-weight:600;font-size:.9375rem;line-height:1.25;text-decoration:none;box-shadow:0 0 20px rgba(57,255,20,.2);transition:background-color .2s ease,box-shadow .2s ease}
+  .hero-hint a:hover{background:rgba(57,255,20,.2);box-shadow:0 0 28px rgba(57,255,20,.35)}
+  .hero-hint svg{width:20px;height:20px;flex:none;color:var(--neon);animation:nudge 1.4s ease-in-out 1.2s 3}
+  @keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+  .proof{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .proof li{background:var(--panel);border:1px solid var(--line);border-top:2px solid var(--neon);border-radius:var(--radius-sm);padding:14px 14px 12px}
+  .proof b{display:block;font-size:1.25rem;font-weight:800;line-height:1.2}
+  .proof .t{display:block;margin-top:2px;font-size:.8125rem;color:var(--muted);line-height:1.35}
+  .stars{color:var(--gold);letter-spacing:2px;font-size:.9rem}
+  .proof .stars{display:inline}
+
+  /* ---------- Quote form ---------- */
+  .form-card{background:var(--ink);border:1px solid var(--line-strong);border-radius:var(--radius);padding:24px 20px;scroll-margin-top:84px}
+  .form-card h2{font-size:1.4rem;line-height:1.2}
+  .form-card .lead{margin-top:6px;color:var(--muted);font-size:.9375rem}
+  .field{margin-top:14px}
+  .field label{display:block;font-size:.8125rem;font-weight:600;color:var(--muted);margin-bottom:5px}
+  .field .opt{font-weight:400;color:var(--dim)}
+  .field input,.field select{width:100%;height:50px;background:var(--ink);color:var(--text);border:1px solid var(--line-strong);border-radius:var(--radius-sm);padding:0 14px;font:400 16px/1 var(--font);appearance:none;-webkit-appearance:none}
+  .field select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9' fill='none'><path d='M1 1.5 7 7.5 13 1.5' stroke='%2339ff14' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
+  .field input::placeholder{color:#6b7280}
+  .field input:focus,.field select:focus{outline:2px solid var(--neon);outline-offset:0;border-color:var(--neon)}
+  .form-card .btn{width:100%;margin-top:20px;height:54px}
+  .fine{margin-top:12px;font-size:.8125rem;color:var(--muted);text-align:center}
+  .form-status{margin-top:14px;padding:12px 14px;border-radius:var(--radius-sm);font-size:.9375rem;display:none}
+  .form-status.show{display:block}
+  .form-status.ok{background:rgba(57,255,20,.08);border:1px solid var(--neon-line)}
+  .form-status.err{background:#1c1c1c;border:1px solid #7f1d1d}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+  /* ---------- Sections ---------- */
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  .s-alt{background:#0f0f0f}
+  .s-head{max-width:42rem}
+  .s-head h2{font-size:clamp(1.65rem,5.4vw,2.5rem);line-height:1.12}
+  .s-head p{margin-top:12px;color:var(--muted)}
+  .rule{width:45px;height:3px;background:var(--neon);margin:14px 0 0}
+
+  /* ---------- Signature: inspection scan ---------- */
+  .scan{margin-top:32px;display:grid;gap:18px}
+  .hud{position:relative;background:var(--ink);border:1px solid var(--line-strong);border-radius:var(--radius);padding:14px 14px 16px;overflow:hidden}
+  .hud-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:.8125rem;color:var(--muted)}
+  .hud-top .now{color:var(--text);font-weight:600;min-width:0}
+  .hud-top .time{color:var(--neon);font-weight:800;flex:none}
+  .hud svg{display:block;width:100%;height:auto;margin-top:6px}
+  .progress{height:4px;background:var(--line);border-radius:4px;margin-top:10px;overflow:hidden}
+  .progress i{display:block;height:100%;width:0;background:var(--neon);box-shadow:0 0 12px var(--neon)}
+  .stamp{position:absolute;right:14px;top:54px;border:2px solid var(--neon);color:var(--neon);background:rgba(0,0,0,.82);border-radius:6px;padding:8px 14px;font-weight:800;font-size:.9375rem;line-height:1.2;opacity:0;transform:scale(1.5) rotate(-8deg);transition:opacity .35s ease,transform .35s cubic-bezier(.2,.9,.3,1.2);box-shadow:0 0 22px rgba(57,255,20,.35)}
+  .stamp.show{opacity:1;transform:scale(1) rotate(-6deg)}
+  .hud-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:12px;font-size:.8125rem;color:var(--dim)}
+  .replay{background:transparent;border:1px solid var(--line-strong);color:var(--muted);border-radius:6px;min-height:36px;padding:0 12px;font:600 .8125rem var(--font);cursor:pointer}
+  .replay:hover{border-color:var(--neon-line);color:var(--text)}
+  .checks{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .checks li{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:10px 12px;font-size:.9375rem;font-weight:600;color:var(--dim);transition:color .25s ease,border-color .25s ease}
+  .checks li .dot{width:20px;height:20px;border-radius:50%;border:2px solid #3a3a3a;flex:none;display:grid;place-items:center;transition:background-color .25s ease,border-color .25s ease}
+  .checks li .dot svg{width:12px;height:12px;opacity:0;transition:opacity .2s ease}
+  .checks li.done{color:var(--text);border-color:#1d3a18}
+  .checks li.done .dot{background:var(--neon);border-color:var(--neon)}
+  .checks li.done .dot svg{opacity:1}
+  .mk{fill:#0b0b0b;stroke:#6b7280;stroke-width:2;transition:fill .2s ease,stroke .2s ease}
+  .mk.on{fill:var(--neon);stroke:var(--neon);filter:drop-shadow(0 0 5px rgba(57,255,20,.9))}
+  .ring{fill:none;stroke:var(--neon);stroke-width:2;opacity:0;transform-box:fill-box;transform-origin:center}
+  .ring.on{animation:ping .9s ease-out 1}
+  @keyframes ping{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(3.2)}}
+
+  /* ---------- Compare ---------- */
+  .vs-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+  .vs-tab{min-height:44px;padding:0 16px;border-radius:999px;background:var(--panel);border:1px solid var(--line-strong);color:var(--text);font:600 .9375rem/1 var(--font);cursor:pointer;transition:background-color .15s ease,border-color .15s ease}
+  .vs-tab:hover{border-color:var(--neon-line)}
+  .vs-tab[aria-selected="true"]{background:var(--neon);color:#000;border-color:var(--neon)}
+  .vs-panel{margin-top:22px}
+  .vs-title{font-size:1.35rem;line-height:1.2}
+  .vs-meta{margin-top:4px;color:var(--dim);font-size:.8125rem}
+  .cmp{margin-top:16px;display:grid;gap:12px}
+  .cmp-row{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px;display:grid;gap:10px}
+  .cmp-label{font-weight:600;color:var(--muted);font-size:.875rem}
+  .cmp-cells{display:grid;grid-template-columns:1fr;gap:10px}
+  .cell{padding:10px 12px;border-radius:var(--radius-sm);background:var(--ink);border:1px solid var(--line);font-size:.9375rem;line-height:1.4}
+  .cell::before{content:attr(data-who);display:block;font-size:.75rem;color:var(--dim);margin-bottom:4px;font-weight:600}
+  .cell.us{border-color:var(--neon-line)}
+  .cell.lead{border-color:var(--neon);box-shadow:0 0 0 1px rgba(57,255,20,.25)}
+  .cell.lead::before{color:var(--neon)}
+  .cell.them{color:var(--muted)}
+  .cell .pill{display:flex;width:fit-content;align-items:center;margin-bottom:6px;padding:3px 10px;border-radius:999px;background:var(--neon);color:#000;font-size:.75rem;font-weight:800;line-height:1.3}
+  .cell .plus{display:block;margin-top:8px;padding-top:8px;border-top:1px solid var(--line);color:var(--muted);font-size:.875rem}
+  .cell .lose{display:flex;width:fit-content;align-items:center;margin-bottom:6px;padding:3px 10px;border-radius:999px;background:rgba(248,113,113,.1);border:1px solid #5b2323;color:#f87171;font-size:.75rem;font-weight:600;line-height:1.3}
+  .cell.nd{color:var(--dim);font-style:italic}
+  .vs-cta{margin-top:20px;display:grid;gap:12px;max-width:26rem}
+  .legal{margin-top:22px;color:var(--dim);font-size:.8125rem;max-width:46rem}
+  .src{margin-top:12px;font-size:.8125rem;color:var(--dim);max-width:46rem}
+  .src summary{cursor:pointer;color:var(--muted);font-weight:600;min-height:32px;display:flex;align-items:center}
+  .src ul{margin-top:6px;display:grid;gap:4px}
+
+  /* ---------- Six questions ---------- */
+  .qa{margin-top:32px;display:grid;gap:12px}
+  .qa .row{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--neon);border-radius:var(--radius-sm);padding:16px 18px;display:grid;gap:6px}
+  .qa dt{font-size:.875rem;color:var(--muted);font-weight:600}
+  .qa dd{margin:0;font-weight:600;display:flex;gap:10px;align-items:flex-start}
+  .qa dd svg{width:22px;height:22px;flex:none;margin-top:2px}
+  .qa-head{display:none}
+  .guarantee{margin-top:28px;background:var(--ink);border:1px solid var(--neon-line);border-radius:var(--radius);padding:24px 20px;display:grid;gap:16px;box-shadow:0 0 22px rgba(57,255,20,.12)}
+  .guarantee h3{font-size:1.35rem;line-height:1.2}
+  .guarantee p{color:var(--muted)}
+
+  /* ---------- Price ---------- */
+  .price-grid{margin-top:32px;display:grid;gap:16px}
+  .price-card,.included{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px}
+  .price-card{border-top:2px solid var(--neon)}
+  .price-card .from{color:var(--muted);font-size:.9375rem}
+  .price-card .amount{font-size:3.25rem;font-weight:800;line-height:1.05;margin-top:2px}
+  .price-card .note{margin-top:10px;color:var(--muted);font-size:.9375rem}
+  .price-card .multi{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-weight:600}
+  .included h3{font-size:1.1rem;margin-bottom:12px}
+  .ticks li{display:flex;gap:10px;padding:7px 0}
+  .ticks svg{width:20px;height:20px;flex:none;margin-top:3px}
+  .vehicles{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.9375rem}
+  .vehicles strong{color:var(--text);font-weight:600}
+
+  /* ---------- Reviews ---------- */
+  .reviews-top{display:flex;align-items:center;gap:14px;margin-top:14px;flex-wrap:wrap}
+  .reviews-top .big{font-size:2.5rem;font-weight:800;line-height:1}
+  .reviews-top .meta{color:var(--muted);font-size:.9375rem}
+  .reviews{margin-top:28px;display:grid;gap:14px}
+  .review{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+  .review blockquote{margin:10px 0 14px}
+  .review cite{font-style:normal;font-weight:600;font-size:.9375rem}
+  .review .srcl{display:block;color:var(--muted);font-size:.8125rem;font-weight:400}
+
+  /* ---------- FAQ ---------- */
+  .faq{margin-top:28px;max-width:46rem;display:grid;gap:10px}
+  .faq details{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm)}
+  .faq summary{list-style:none;cursor:pointer;padding:16px 18px;font-weight:600;display:flex;justify-content:space-between;gap:14px;align-items:center;min-height:56px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--neon);font-size:1.5rem;font-weight:400;line-height:1;flex:none}
+  .faq details[open] summary::after{content:"\2212"}
+  .faq details[open]{border-color:var(--neon-line)}
+  .faq .ans{padding:0 18px 18px;color:var(--muted)}
+
+  /* ---------- Final CTA + footer (matches the live page) ---------- */
+  .final{background:#0f0f0f;text-align:center;padding:72px 0 80px;border-top:1px solid #2a2a2a}
+  .spots{display:inline-block;border:1px solid #1d4a14;background:rgba(57,255,20,.06);color:var(--neon);border-radius:999px;padding:9px 18px;font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+  .final h2{margin:22px auto 0;font-size:clamp(1.9rem,6.4vw,3.2rem);line-height:1.1;text-transform:uppercase;max-width:60rem}
+  .final p{margin:16px auto 0;color:var(--muted);max-width:40rem}
+  .final-cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .final-cta .btn{min-width:240px}
+  .final .trust-line{margin-top:22px;font-size:.9375rem;color:var(--text)}
+  footer{background:#0b0b0b;border-top:1px solid #2a2a2a;padding:40px 0 48px;text-align:center;color:var(--text);font-size:.8125rem}
+  footer .wrap{display:grid;gap:10px;justify-items:center}
+  footer .brand{color:var(--neon);font-weight:800;font-size:.9375rem;letter-spacing:.3em}
+  footer .fphone{color:var(--text);font-weight:800;font-size:1.0625rem;text-decoration:none;margin-top:4px}
+  footer .copy{margin-top:8px;color:var(--muted)}
+  footer .copy a{color:var(--text);font-weight:600}
+  footer .tm{color:var(--dim);font-size:.75rem;max-width:42rem}
+
+  /* ---------- Mobile sticky bar ---------- */
+  .mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--black);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1.4fr 1fr;gap:10px}
+  .mbar .btn{min-height:50px;padding:0 12px;font-size:.9375rem}
+
+
+  /* ---------- Hero cover photo (swap the <img> src in .hero-cover to change it) ---------- */
+  .hero-cover{position:absolute;inset:0;z-index:-3}
+  .hero-cover img{width:100%;height:100%;object-fit:cover;object-position:18% 62%}
+  .hero-cover::before,.hero-cover::after{content:"";position:absolute;width:34px;height:34px;z-index:1;opacity:.85}
+  .hero-cover::before{top:16px;left:16px;border-top:2px solid var(--neon);border-left:2px solid var(--neon)}
+  .hero-cover::after{bottom:16px;right:16px;border-bottom:2px solid var(--neon);border-right:2px solid var(--neon)}
+  .hero-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(0,0,0,.62),rgba(0,0,0,.9))}
+  .hero-sweep{position:absolute;top:0;bottom:0;left:-22%;width:20%;z-index:-1;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(57,255,20,.2),transparent);animation:sweep 1.9s ease-out .35s 1 both}
+  @keyframes sweep{from{transform:translateX(0);opacity:1}to{transform:translateX(620%);opacity:0}}
+  .rating-line{margin-top:24px;color:var(--muted);font-size:.9375rem}
+  .rating-line b{color:var(--text)}
+
+  /* ---------- Stats band: rating ring + count-up ---------- */
+  .statband{padding:44px 0;background:var(--black)}
+  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-top:2px solid var(--neon);border-radius:var(--radius);padding:20px 12px 18px;min-height:168px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+  .stat b{font-size:2.15rem;line-height:1.05;font-weight:800;font-variant-numeric:tabular-nums}
+  .stat .lab{color:var(--muted);font-size:.875rem;line-height:1.35}
+  .ringw{position:relative;width:108px;height:108px}
+  .ringw svg{width:100%;height:100%;display:block}
+  .ringw b{position:absolute;inset:0;display:grid;place-items:center;font-size:1.7rem}
+  .rt{fill:none;stroke:#242424;stroke-width:8}
+  .rf{fill:none;stroke:var(--neon);stroke-width:8;stroke-linecap:round;filter:drop-shadow(0 0 6px rgba(57,255,20,.6))}
+
+
+  /* ---------- Vehicles we inspect ---------- */
+  .veh{margin-top:40px}
+  .veh h3{font-size:clamp(1.3rem,4.4vw,1.75rem);line-height:1.15}
+  .veh-grid{margin-top:20px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .veh-chip{width:100%;min-height:112px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:14px 8px;border-radius:var(--radius);cursor:pointer;
+    background:rgba(57,255,20,.07);border:1px solid var(--neon-line);color:var(--text);font:600 .9375rem/1.2 var(--font);
+    box-shadow:0 0 18px rgba(57,255,20,.1);transition:border-color .35s ease,background-color .35s ease,color .35s ease,box-shadow .2s ease,transform .1s ease}
+  .veh-chip svg{width:64px;height:40px;fill:none;stroke:var(--neon);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke .35s ease}
+  .veh-chip:hover{border-color:var(--neon);box-shadow:0 0 26px rgba(57,255,20,.3)}
+  .veh-chip:active{transform:translateY(1px)}
+  .veh-note{margin-top:14px;color:var(--dim);font-size:.8125rem}
+  .js .veh:not(.in) .veh-chip{background:var(--panel);border-color:#2a2a2a;color:var(--dim);box-shadow:none}
+  .js .veh:not(.in) .veh-chip svg{stroke:#4b5563}
+  .js .veh.in .veh-chip{transition-delay:calc(var(--i) * 130ms),calc(var(--i) * 130ms),calc(var(--i) * 130ms),0s,0s}
+  .js .veh.in .veh-chip svg{transition-delay:calc(var(--i) * 130ms)}
+
+  /* ---------- Gallery: HUD frames, scan-reveal ---------- */
+  .gal{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .shot.big{grid-column:1 / -1}
+  .shot{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--panel);aspect-ratio:4/3}
+  .shot img{width:100%;height:100%;object-fit:cover;display:block}
+  .shot::before,.shot::after{content:"";position:absolute;width:22px;height:22px;z-index:2}
+  .shot::before{top:10px;left:10px;border-top:2px solid var(--neon);border-left:2px solid var(--neon)}
+  .shot::after{bottom:10px;right:10px;border-bottom:2px solid var(--neon);border-right:2px solid var(--neon)}
+  .js .shot img{clip-path:inset(0 100% 0 0);transition:clip-path 1.2s cubic-bezier(.2,.7,.2,1)}
+  .js .shot.in img{clip-path:inset(0 0 0 0)}
+
+  /* ---------- Tablet / desktop ---------- */
+  @media (min-width:640px){
+    .proof{grid-template-columns:repeat(4,1fr)}
+    .stats{grid-template-columns:repeat(4,1fr)}
+    .veh-grid{grid-template-columns:repeat(3,1fr)}
+    .cmp-cells{grid-template-columns:1fr 1fr}
+    .price-grid{grid-template-columns:1fr 1.2fr}
+    .reviews{grid-template-columns:repeat(3,1fr)}
+    .checks{grid-template-columns:repeat(3,1fr)}
+  }
+  @media (min-width:900px){
+    body{padding-bottom:0}
+    .mbar{display:none}
+    .site-header{position:sticky;top:0;z-index:40}
+    section{scroll-margin-top:68px}
+    .header-call .full{display:inline}
+    .hero{padding:64px 0 76px}
+    .hero-grid{grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+    .hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.95) 0%,rgba(0,0,0,.82) 48%,rgba(0,0,0,.5) 100%),linear-gradient(0deg,#000,transparent 26%)}
+    .veh-grid{grid-template-columns:repeat(6,1fr)}
+    .gal{grid-template-columns:repeat(3,1fr);grid-auto-rows:230px}
+    .shot{aspect-ratio:auto}
+    .shot.big{grid-column:1 / 3;grid-row:1 / 3}
+    .hero-cta{grid-template-columns:1fr 1fr;max-width:none}
+    .proof{grid-template-columns:repeat(2,1fr)}
+    .form-card{padding:30px 28px;position:sticky;top:96px}
+    section{padding:88px 0}
+    .scan{grid-template-columns:1.55fr 1fr;align-items:start;gap:24px}
+    .checks{grid-template-columns:1fr 1fr}
+    .hud{padding:18px 20px 18px}
+    .stamp{top:62px;right:20px}
+    .cmp-row{grid-template-columns:200px 1fr;gap:18px;align-items:start;padding:16px 18px}
+    .qa{gap:0;border:1px solid var(--line);border-radius:0 0 var(--radius) var(--radius);overflow:hidden;background:var(--panel);margin-top:0}
+    .qa-head{display:grid;grid-template-columns:5fr 7fr;margin-top:32px;padding:12px 22px;background:var(--ink);border:1px solid var(--line);border-bottom:0;border-radius:var(--radius) var(--radius) 0 0;color:var(--muted);font-size:.875rem;font-weight:600}
+    .qa .row{grid-template-columns:5fr 7fr;gap:24px;align-items:center;border:0;border-bottom:1px solid var(--line);border-left:3px solid var(--neon);border-radius:0;padding:20px 22px 20px 19px}
+    .qa .row:last-child{border-bottom:0}
+    .qa dt{font-size:1rem;color:var(--text)}
+    .guarantee{grid-template-columns:1fr auto;align-items:center;padding:28px 32px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none !important;animation:none !important}
+    .js .shot img{clip-path:none}
+  }
+</style>
+</head>
+
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#39ff14"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#000" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-tick" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#39ff14" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-tick-k" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#000" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<div class="strip">Same-day bookings available in QLD. Call before 12pm.</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="https://www.autoking.com.au/" aria-label="Auto King Mobile Mechanics">
+      <img src="https://www.autoking.com.au/wp-content/uploads/2020/05/autoking-logo.png.webp" alt="Auto King Mobile Mechanics" width="140" height="36">
+    </a>
+    <!-- Every call link on this page must stay exactly tel:1300265118 so the existing GTM trigger "Click – Tel – Roadworthy (1300265118)" fires. -->
+    <a class="btn btn-call btn-sm header-call" href="tel:1300265118"><svg><use href="#i-phone"/></svg><span>Call <span class="full">1300 26 51 18</span></span></a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <div class="hero">
+    <!-- COVER PHOTO: change this src to swap the hero image. Auto King's own photo from the live gallery. Use a compressed WebP copy (under 150 KB) before launch. -->
+    <div class="hero-cover" aria-hidden="true">
+      <img src="https://www.autoking.com.au/wp-content/uploads/2026/06/2008-Ford-transit-diesel-injectors-replacement-Auto-King.jpeg" alt="" width="2016" height="1512" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero-shade"></div>
+    <div class="hero-sweep"></div>
+    <div class="wrap hero-grid">
+
+      <div>
+        <h1>Already got a roadworthy quote? Show us. We'll beat it.</h1>
+        <p class="sub">Auto King's QLD-approved inspectors come to your home or work in <strong id="loc">QLD</strong>, inspect your vehicle and issue the certificate on the spot.</p>
+
+        <div class="hero-cta">
+          <a class="btn btn-call" href="tel:1300265118"><svg><use href="#i-phone"/></svg>Call 1300 26 51 18</a>
+          <a class="btn btn-ghost" href="#quote">Send us your quote</a>
+        </div>
+        <p class="hero-hint"><a href="#compare" id="vs-hint"><span id="vs-hint-text">See how Auto King compares with other providers</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+        <p class="rating-line"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <b>4.9</b> from 3,000+ Google reviews. In Queensland since 2006.</p>
+      </div>
+
+      <!-- ================= QUOTE FORM ================= -->
+      <div class="form-card" id="quote">
+        <h2>Get your free roadworthy quote</h2>
+        <p class="lead">We'll call you back within minutes to confirm your booking.</p>
+
+        <form id="quote-form" method="post" action="REPLACE_WITH_FORM_ENDPOINT" novalidate>
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Phone number</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="f-suburb">Your suburb</label><input id="f-suburb" name="suburb" type="text" autocomplete="address-level2" required></div>
+          <div class="field">
+            <label for="f-vehicle">Vehicle type</label>
+            <select id="f-vehicle" name="vehicle_type" required>
+              <option value="">Select vehicle type</option>
+              <option>Car</option><option>SUV / 4WD</option><option>Van</option><option>Motorcycle</option><option>Trailer</option><option>Caravan</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-when">When do you need it?</label>
+            <select id="f-when" name="when_needed">
+              <option>Today (same day)</option><option>Tomorrow</option><option>This week</option><option>Flexible</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-quote">The quote you've been given <span class="opt">(optional)</span></label>
+            <input id="f-quote" name="competitor_quote" type="text" inputmode="decimal" placeholder="For example, $180">
+          </div>
+
+          <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+          <!-- Attribution + routing (filled by the script). Replace form_subject with the coded subject used for Monday.com routing. -->
+          <input type="hidden" name="form_subject" value="REPLACE_WITH_CODED_SUBJECT (competitor landing page, roadworthy)">
+          <input type="hidden" name="compared_with" value="">
+          <input type="hidden" name="utm_source" value="">
+          <input type="hidden" name="utm_medium" value="">
+          <input type="hidden" name="utm_campaign" value="">
+          <input type="hidden" name="utm_term" value="">
+          <input type="hidden" name="utm_content" value="">
+          <input type="hidden" name="gclid" value="">
+          <input type="hidden" name="landing_page" value="">
+
+          <button class="btn btn-call" type="submit">Get my free quote</button>
+          <p class="fine">No hidden fees. No obligation.</p>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ================= COMPARE ================= -->
+  <section class="s-alt" id="compare">
+    <div class="wrap">
+      <div class="s-head">
+        <h2>How Auto King compares</h2>
+        <div class="rule"></div>
+        <p>Pick a provider. Each point comes from that business's own homepage, with the data we checked.</p>
+      </div>
+
+      <div class="vs-tabs" id="vs-tabs" role="tablist" aria-label="Choose a provider to compare"></div>
+
+      <div class="vs-panel" id="vs-panel" role="tabpanel" aria-live="polite">
+        <noscript><p class="legal">Turn on JavaScript to use the comparison, or call 1300 26 51 18 and we will talk you through it.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS BAND ================= -->
+  <section class="statband" id="stats" aria-label="Auto King by the numbers">
+    <div class="wrap">
+      <ul class="stats">
+        <li class="stat">
+          <div class="ringw">
+            <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="rt" cx="60" cy="60" r="52"/><circle class="rf" id="ring-fill" cx="60" cy="60" r="52" transform="rotate(-90 60 60)"/></svg>
+            <b data-count="4.9" data-dec="1">4.9</b>
+          </div>
+          <span class="lab">Average Google rating</span>
+        </li>
+        <li class="stat"><b data-count="3000" data-suffix="+">3,000+</b><span class="lab">Google reviews</span></li>
+        <li class="stat"><b data-count="50000" data-suffix="+">50,000+</b><span class="lab">certificates issued</span></li>
+        <li class="stat"><b data-count="20" data-suffix=" years">20 years</b><span class="lab">serving Queensland</span></li>
+      </ul>
+      <div class="veh" id="vehicles">
+        <h3>Vehicles we inspect</h3>
+        <div class="rule"></div>
+        <ul class="veh-grid">
+          <li><button class="veh-chip" type="button" data-vehicle="Car" style="--i:0" aria-label="Car: get a quote"><svg viewBox="0 0 64 40" aria-hidden="true"><path d="M6 28V22Q6 20 8 19L14 12Q15 10 18 10H38Q41 10 43 12L50 19H56Q58 19 58 22V28Z"/><path d="M17 19L21 13H30V19ZM34 13H39L44 19H34Z"/><circle cx="18" cy="29" r="5"/><circle cx="46" cy="29" r="5"/></svg><span>Car</span></button></li>
+          <li><button class="veh-chip" type="button" data-vehicle="SUV / 4WD" style="--i:1" aria-label="SUV / 4WD: get a quote"><svg viewBox="0 0 64 40" aria-hidden="true"><path d="M6 28V16Q6 14 8 14L14 8H46Q48 8 50 10L54 16H56Q58 16 58 18V28Z"/><path d="M17 14L20 10H31V14ZM35 10H44L48 14H35Z"/><path d="M14 5H46"/><circle cx="18" cy="29" r="6"/><circle cx="46" cy="29" r="6"/></svg><span>SUV / 4WD</span></button></li>
+          <li><button class="veh-chip" type="button" data-vehicle="Van" style="--i:2" aria-label="Van: get a quote"><svg viewBox="0 0 64 40" aria-hidden="true"><path d="M6 28V10Q6 8 8 8H40V28"/><path d="M40 14H50L58 22V28H40"/><path d="M44 17H50L54 22H44Z"/><circle cx="18" cy="29" r="5"/><circle cx="48" cy="29" r="5"/></svg><span>Van</span></button></li>
+          <li><button class="veh-chip" type="button" data-vehicle="Motorcycle" style="--i:3" aria-label="Motorcycle: get a quote"><svg viewBox="0 0 64 40" aria-hidden="true"><circle cx="14" cy="28" r="8"/><circle cx="50" cy="28" r="8"/><path d="M14 28L24 16H36L44 20L50 28"/><path d="M36 16L42 11H47"/><path d="M24 16H33"/><path d="M26 28L34 21L42 28"/></svg><span>Motorcycle</span></button></li>
+          <li><button class="veh-chip" type="button" data-vehicle="Trailer" style="--i:4" aria-label="Trailer: get a quote"><svg viewBox="0 0 64 40" aria-hidden="true"><path d="M10 12H48V26H10Z"/><path d="M48 22H60"/><path d="M10 26V31"/><path d="M18 12V26M28 12V26M38 12V26"/><circle cx="28" cy="30" r="5"/></svg><span>Trailer</span></button></li>
+          <li><button class="veh-chip" type="button" data-vehicle="Caravan" style="--i:5" aria-label="Caravan: get a quote"><svg viewBox="0 0 64 40" aria-hidden="true"><path d="M6 28V16Q6 8 16 8H48Q58 8 58 16V28Z"/><path d="M18 14H30V22H18Z"/><path d="M40 14H48V28H40Z"/><path d="M58 26H62"/><circle cx="30" cy="30" r="5"/></svg><span>Caravan</span></button></li>
+        </ul>
+        <p class="veh-note">Tap a vehicle to start your quote. Subject to availability in your area.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SIGNATURE: INSPECTION SCAN ================= -->
+  <section class="s-alt" id="scan-section">
+    <div class="wrap">
+      <div class="s-head">
+        <h2>Your inspection, checked point by point</h2>
+        <div class="rule"></div>
+        <p>Every inspection covers the same 12 areas. If your vehicle passes, we issue your certificate on the spot. The animation is an illustration of a typical inspection, which takes about 45 minutes. Actual time varies by vehicle.</p>
+      </div>
+
+      <div class="scan">
+        <div class="hud" id="hud">
+          <div class="hud-top">
+            <span class="now" id="hud-now">Ready to scan</span>
+            <span class="time num" id="hud-time">0 of 45 min</span>
+          </div>
+
+          <svg viewBox="0 0 800 300" role="img" aria-label="Side-view outline of a car being scanned. Twelve inspection points light up in sequence from the rear to the front.">
+            <defs>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1b1b1b" stroke-width="1"/></pattern>
+              <clipPath id="scanClip"><rect id="clipRect" x="0" y="0" width="0" height="300"/></clipPath>
+              <linearGradient id="trail" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#39ff14" stop-opacity="0"/><stop offset="1" stop-color="#39ff14" stop-opacity=".28"/></linearGradient>
+              <g id="car" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M138 216H60V192Q60 178 80 174L168 160Q200 128 262 104Q300 92 350 92H470Q520 94 556 122L640 150L706 158Q740 164 744 190V216H662"/>
+                <path d="M138 216A52 52 0 0 1 242 216"/>
+                <path d="M558 216A52 52 0 0 1 662 216"/>
+                <path d="M242 216H558"/>
+                <circle cx="190" cy="218" r="40"/><circle cx="190" cy="218" r="16"/>
+                <circle cx="610" cy="218" r="40"/><circle cx="610" cy="218" r="16"/>
+                <path d="M214 136Q244 112 290 104L340 100V136Z"/>
+                <path d="M356 100H466Q502 102 528 126L536 136H356Z"/>
+                <path d="M346 100V190"/>
+                <path d="M718 168L740 172L742 186L716 184Z"/>
+                <path d="M62 180L80 178V190L62 192Z"/>
+                <path d="M70 226H112V232H70Z"/>
+                <path d="M242 226H558" stroke-dasharray="6 6"/>
+              </g>
+            </defs>
+
+            <rect width="800" height="300" fill="url(#grid)"/>
+            <use href="#car" stroke="#4b5563" stroke-width="1.8"/>
+            <use href="#car" stroke="#39ff14" stroke-width="2.2" clip-path="url(#scanClip)"/>
+            <g id="markers"></g>
+            <g id="scanG" transform="translate(40,0)">
+              <rect x="-80" y="0" width="80" height="300" fill="url(#trail)"/>
+              <line x1="0" y1="0" x2="0" y2="300" stroke="#39ff14" stroke-width="2"/>
+            </g>
+          </svg>
+
+          <div class="progress" aria-hidden="true"><i id="hud-bar"></i></div>
+          <div class="stamp" id="stamp">Certificate issued</div>
+          <div class="hud-foot">
+            <span id="hud-foot-text">Scan starts when this section is in view.</span>
+            <button class="replay" id="replay" type="button">Replay</button>
+          </div>
+        </div>
+
+        <ul class="checks" id="checks" aria-label="The 12 inspection areas">
+          <li data-x="100" data-y="229"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>Exhaust system</li>
+          <li data-x="190" data-y="260"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>Tyres and wheels</li>
+          <li data-x="242" data-y="232"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>Suspension</li>
+          <li data-x="300" data-y="150"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>Hand brake</li>
+          <li data-x="352" data-y="118"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>Seat belts</li>
+          <li data-x="400" data-y="226"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>Oil leaks</li>
+          <li data-x="450" data-y="176"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>Body and chassis</li>
+          <li data-x="470" data-y="118"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>Steering</li>
+          <li data-x="516" data-y="114"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>Windscreen</li>
+          <li data-x="548" data-y="140"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>Wipers</li>
+          <li data-x="610" data-y="218"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>Brakes</li>
+          <li data-x="728" data-y="178"><span class="dot"><svg><use href="#i-tick-k"/></svg></span>All lights</li>
+        </ul>
+      </div>
+
+      <p class="legal" style="margin-top:20px">Didn't pass? You usually have 14 days to fix the issues and arrange a re-inspection. Your inspector explains every finding.</p>
+    </div>
+  </section>
+
+
+  <!-- ================= GALLERY ================= -->
+  <!-- Photos are Auto King's own, from the live roadworthy page gallery. Several vans show older phone numbers (1300 202 282, 1300 646 911, 1300 09 29 49). Retouch or swap before launch. Compress each to WebP under 150 KB. -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="s-head">
+        <h2>Auto King on the job</h2>
+        <div class="rule"></div>
+        <p>Our vehicles on site across Queensland, from our own photos.</p>
+      </div>
+      <div class="gal">
+        <figure class="shot big"><img src="https://www.autoking.com.au/wp-content/uploads/2026/06/1929-Chevy-Break-down.jpg" loading="lazy" decoding="async" width="2109" height="1582" alt="Auto King mobile mechanic van parked next to a vintage black car, with a mechanic standing beside it"></figure>
+        <figure class="shot"><img src="https://www.autoking.com.au/wp-content/uploads/2026/06/3.jpeg" loading="lazy" decoding="async" width="2016" height="1512" alt="Auto King ute parked beside a dark Ford sedan on a brick driveway"></figure>
+        <figure class="shot"><img src="https://www.autoking.com.au/wp-content/uploads/2026/06/1972-Chevrolet-El-Camino-SS-Roadworthy--scaled.jpg" loading="lazy" decoding="async" width="2560" height="1920" alt="Auto King van parked behind a red 1972 Chevrolet El Camino SS in a car park"></figure>
+        <figure class="shot"><img src="https://www.autoking.com.au/wp-content/uploads/2026/06/2008-Ford-transit-diesel-injectors-replacement-Auto-King.jpeg" loading="lazy" decoding="async" width="2016" height="1512" alt="Auto King ute parked beside a white Ford Transit van with its bonnet open"></figure>
+        <figure class="shot"><img src="https://www.autoking.com.au/wp-content/uploads/2026/06/2014-HSV-R8-Maloo-Roadworthy-chad-scaled.jpg" loading="lazy" decoding="async" width="2560" height="1244" alt="Auto King van parked beside a red HSV Maloo ute on a gravel driveway"></figure>
+        <figure class="shot"><img src="https://www.autoking.com.au/wp-content/uploads/2026/06/2014-Maserati-Ghibli-Maintenance-Service--scaled.jpg" loading="lazy" decoding="async" width="2560" height="1920" alt="Auto King van parked behind a grey Maserati Ghibli in a covered car park"></figure>
+        <figure class="shot"><img src="https://www.autoking.com.au/wp-content/uploads/2026/06/Brad-2005-Holden-VZ-Commodore-brakes-scaled.jpg" loading="lazy" decoding="async" width="2560" height="1920" alt="Auto King van parked on a street beside a blue Holden Commodore with its bonnet open"></figure>
+        <figure class="shot"><img src="https://www.autoking.com.au/wp-content/uploads/2026/06/Chad-Hummer-Brakes--scaled.jpg" loading="lazy" decoding="async" width="2560" height="1920" alt="Auto King van parked in front of two Hummer vehicles outside a house"></figure>
+        <figure class="shot"><img src="https://www.autoking.com.au/wp-content/uploads/2026/06/Darryl-Ford-Mustang.jpg" loading="lazy" decoding="async" width="2016" height="1512" alt="Auto King ute beside a blue Ford Mustang under a carport"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SIX QUESTIONS ================= -->
+  <section class="s-alt" id="questions">
+    <div class="wrap">
+      <div class="s-head">
+        <h2>Six questions to ask any roadworthy provider</h2>
+        <div class="rule"></div>
+        <p>Prices, fees and timing can differ a lot between providers. Here is how Auto King answers each one.</p>
+      </div>
+
+      <div class="qa-head" aria-hidden="true"><span>Ask any provider</span><span>Auto King's answer</span></div>
+      <dl class="qa">
+        <div class="row"><dt>What will it cost, and is that the final price?</dt>
+          <dd><svg aria-hidden="true"><use href="#i-check"/></svg><span>From <span data-price>$149</span> for standard light vehicles. The price you're quoted is exactly what you pay.</span></dd></div>
+        <div class="row"><dt>Is there a call-out or travel fee?</dt>
+          <dd><svg aria-hidden="true"><use href="#i-check"/></svg><span>No. We charge zero call-out or travel fees.</span></dd></div>
+        <div class="row"><dt>Can they come today?</dt>
+          <dd><svg aria-hidden="true"><use href="#i-check"/></svg><span>Same-day inspections are often available. Call before 12pm, Monday to Saturday.</span></dd></div>
+        <div class="row"><dt>Is the inspector government approved?</dt>
+          <dd><svg aria-hidden="true"><use href="#i-check"/></svg><span>Yes. Auto King is a QLD Government approved Authorised Vehicle Inspection Station, and certificates are valid for transfer and re-registration.</span></dd></div>
+        <div class="row"><dt>Do you get the certificate on the spot?</dt>
+          <dd><svg aria-hidden="true"><use href="#i-check"/></svg><span>Yes. If your vehicle passes, the certificate is issued at your location, usually within about 45 minutes.</span></dd></div>
+        <div class="row"><dt>What happens if it doesn't pass?</dt>
+          <dd><svg aria-hidden="true"><use href="#i-check"/></svg><span>Your inspector walks you through every finding. You usually have 14 days to fix the issues and arrange a re-inspection.</span></dd></div>
+      </dl>
+
+      <!-- CONFIRM WITH JAY BEFORE LAUNCH: the live page says "beat any written quote, guaranteed" in the hero but "aim to beat it where possible" in the FAQ. Align the wording and add any conditions here. -->
+      <div class="guarantee">
+        <div>
+          <h3>Price beat guarantee</h3>
+          <p>Show us a written quote from a local provider and we will beat it.</p>
+        </div>
+        <a class="btn btn-call" href="#quote">Send us your quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRICE ================= -->
+  <section id="pricing">
+    <div class="wrap">
+      <div class="s-head"><h2>Upfront roadworthy pricing</h2><div class="rule"></div></div>
+      <div class="price-grid">
+        <div class="price-card">
+          <div class="from">Standard roadworthy certificate, from</div>
+          <div class="amount" data-price>$149</div>
+          <p class="note">For standard light vehicles. The final price may vary depending on vehicle type and location. The price you're quoted is the price you pay.</p>
+          <p class="multi">From $99 each when you book 2 or more cars.</p>
+        </div>
+        <div class="included">
+          <h3>Included in every inspection</h3>
+          <ul class="ticks">
+            <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Full QLD safety inspection</li>
+            <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Certificate issued on the spot</li>
+            <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Written and verbal report</li>
+            <li><svg aria-hidden="true"><use href="#i-tick"/></svg>We come to your location</li>
+            <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Zero call-out or travel fees</li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero-cta" style="margin-top:28px">
+        <a class="btn btn-call" href="tel:1300265118"><svg><use href="#i-phone"/></svg>Call 1300 26 51 18</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="s-alt" id="reviews">
+    <div class="wrap">
+      <div class="s-head"><h2>What Queensland drivers say</h2><div class="rule"></div></div>
+      <div class="reviews-top">
+        <span class="big">4.9</span>
+        <div><div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="meta">from 3,000+ Google reviews</div></div>
+      </div>
+      <div class="reviews">
+        <figure class="review"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>They arrived on time and provided service with a smile. Auto King Mobile Mechanics has reasonable prices. I will call them again.</blockquote>
+          <figcaption><cite>Mel K.</cite><span class="srcl">Verified Google review</span></figcaption></figure>
+        <figure class="review"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>Auto King Mobile Mechanics are very friendly. They also turned up on time, and provided prompt service.</blockquote>
+          <figcaption><cite>Petronella R</cite><span class="srcl">Verified Google review</span></figcaption></figure>
+        <figure class="review"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>Very convenient having a mechanic come to a place that suits me. He was very friendly and explained to me what he did to fix my car.</blockquote>
+          <figcaption><cite>James</cite><span class="srcl">Verified Google review</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="s-head"><h2>Common questions</h2><div class="rule"></div></div>
+      <div class="faq">
+        <details><summary>How much does a roadworthy cost?</summary><div class="ans">Pricing starts from <span data-price>$149</span> for standard light vehicles. The final price may vary depending on vehicle type and location.</div></details>
+        <details><summary>What is the price beat guarantee?</summary><div class="ans">If you have a written quote from a local provider, show it to us and we will beat it. <!-- Align with the hero wording once Jay confirms the exact terms. --></div></details>
+        <details><summary>Can you come today?</summary><div class="ans">Yes. Same-day mobile roadworthy inspections are often available depending on your location, vehicle type and booking time. Call before 12pm.</div></details>
+        <details><summary>What if my car doesn't pass?</summary><div class="ans">The inspector will explain what needs to be fixed. You usually have 14 days to repair the issues and arrange re-inspection.</div></details>
+        <details><summary>How long does the inspection take?</summary><div class="ans">Most mobile roadworthy inspections take around 45 minutes, depending on the vehicle's condition and the inspection requirements.</div></details>
+        <details><summary>Do I need a roadworthy to sell my car in QLD?</summary><div class="ans">In Queensland, a safety certificate is generally required when selling a registered vehicle or transferring registration.</div></details>
+        <details><summary>What areas do you cover?</summary><div class="ans">We cover the Gold Coast, Logan, Ipswich, Beenleigh, Springwood and surrounding South East Queensland areas. <!-- Wording is from the live page, which does not name Brisbane in this answer. Replace with the exact coverage for this campaign. --></div></details>
+        <details><summary>What vehicles can you inspect?</summary><div class="ans">We can inspect cars, SUVs, 4WDs, vans, motorcycles, trailers and caravans, subject to availability in your area.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA (same layout as the live roadworthy page) ================= -->
+  <section class="final" id="final">
+    <div class="wrap">
+      <!-- Same wording as the live page. Only keep this badge while same-day spots are genuinely available in the area. -->
+      <span class="spots">Spots available today in <b id="spots-loc">Queensland</b></span>
+      <h2>Ready for your RWC today?</h2>
+      <p>Call now. Our inspectors are live in your area. We come to you, certify on the spot, and beat any written local quote. Mon-Sat, 7am to 5pm.</p>
+      <div class="final-cta">
+        <a class="btn btn-call" href="tel:1300265118"><svg><use href="#i-phone"/></svg>Call now: 1300 26 51 18</a>
+        <a class="btn btn-ghost" href="#quote">Get my free quote</a>
+      </div>
+      <p class="trust-line"><span class="stars" aria-hidden="true">&#9733;</span> 4.9 Rating &#10003; Price Beat Guaranteed &#10003; No Hidden Fees</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">AUTO KING&reg;</div>
+    <div>Mobile Mechanics &middot; Queensland</div>
+    <div>Monday &ndash; Saturday &middot; 7:00AM &ndash; 5:00PM</div>
+    <a class="fphone" href="tel:1300265118">1300 26 51 18</a>
+    <div class="copy">&copy; 2026 Auto King Mobile Mechanics. All rights reserved. | <a href="https://www.autoking.com.au/privacy-policy/">Privacy Policy</a></div>
+    <div class="tm">Auto King is not affiliated with or endorsed by any other business named on this page. Their names belong to their owners. Comparison points are selected from each business's homepage, checked on <span id="tm-date">22 October 2026</span>, and are not a full comparison.</div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-call" href="tel:1300265118"><svg><use href="#i-phone"/></svg>Call now</a>
+  <a class="btn btn-ghost" href="#quote">Free quote</a>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* =====================================================================
+     CONFIG: edit here only
+     ===================================================================== */
+  var CONFIG = {
+    priceFrom: '$149',              // Confirmed by client. The live roadworthy page FAQ still says $149: update it so both match.
+    defaultArea: 'QLD',
+    formEndpoint: 'REPLACE_WITH_FORM_ENDPOINT',
+    checkedOn: '22 October 2026',   // update every time the competitor data below is re-checked
+    defaultVs: 'mr-roadworthy'
+  };
+
+  /* =====================================================================
+     COMPARISON DATA
+     Everything below was read from each business's own homepage on the date in CONFIG.checkedOn.
+     "nd" = not stated on that homepage. Re-check before every launch and monthly after.
+     "lead" = Auto King's figure is ahead on a published, checkable number or stated hours.
+     ===================================================================== */
+  /* Row builders. Every row has a sourced figure or statement for BOTH sides (homepages, checked on CONFIG.checkedOn).
+     pill  = Auto King's edge on this row.   plus = extra Auto King point (from autoking.com.au).
+     lose  = tag on the competitor cell. Only used where the published numbers or statements show it.
+     Rows where a competitor matches or beats Auto King are left out. Do not add a row unless both sides can be sourced. */
+  var PLUS_PRICE  = 'Zero call-out or travel fees. The price you\u2019re quoted is what you pay.';
+  var NO_PRICE    = 'No starting price on its homepage.';
+
+  function R_price(them, pill) {
+    return { label: 'Price information', pill: pill || 'Price shown up front',
+      us: function () { return 'From ' + CONFIG.priceFrom + ', shown on this page.'; }, plus: PLUS_PRICE,
+      them: them, lose: '\u2715 No price shown' };
+  }
+  function R_promise(them) {
+    return { label: 'Price promise', pill: 'Price beat offer',
+      us: 'Show us a written local quote and we will beat it.', plus: 'No hidden fees. No obligation.',
+      them: them, lose: '\u2715 No price beat offer' };
+  }
+  function R_resp(them) {
+    return { label: 'Booking response', pill: 'Callback time stated',
+      us: 'We call you back within minutes to confirm your booking.', plus: 'Same-day inspections are often available. Call before 12pm.',
+      them: them, lose: '\u2715 No time stated' };
+  }
+  function R_since(t, pill) {
+    return { label: 'In business since', pill: pill,
+      us: 'In Queensland since 2006.', plus: '50,000+ certificates issued.',
+      them: t, lose: '\u25BC Started later' };
+  }
+  function R_reviews(t, pill, lose) {
+    return { label: 'Google reviews', pill: pill,
+      us: '4.9 from 3,000+ Google reviews.', plus: 'Verified Google reviews from Queensland drivers.',
+      them: t, lose: lose };
+  }
+  function R_certs(t) {
+    return { label: 'Certificates issued', pill: 'More than double',
+      us: '50,000+ certificates issued.', plus: 'QLD Government approved inspection station.',
+      them: t, lose: '\u25BC Fewer issued' };
+  }
+
+  var PROVIDERS = {
+    'mr-roadworthy': {
+      name: 'Mr Roadworthy', short: 'Mr Roadworthy', site: 'mr-roadworthy.com.au',
+      rows: [
+        R_since('Since 2010.', '4 years longer'),
+        { label: 'Saturday inspections', pill: 'Saturday inspections',
+          us: 'Inspectors available Monday to Saturday, 7am to 5pm.', plus: 'Call before 12pm for same-day service.',
+          them: 'Mobile inspections Monday to Friday. Saturday on the Gold Coast only. No Sunday inspections.', lose: '\u25BC Fewer days' },
+        R_price('SMS quote form. Says prices change with vehicle age and location. ' + NO_PRICE)
+      ]
+    },
+    'sab': {
+      name: 'SAB Safety Certificates', short: 'SAB', site: 'sabsafetycertificates.com.au',
+      rows: [
+        R_reviews('4.7 from 546 Google reviews.', 'More than 5x the reviews', '\u25BC Lower rating, fewer reviews'),
+        R_since('Since 2014.', '8 years longer'),
+        R_certs('20,000+ certificates issued.')
+      ]
+    },
+    'east-coast': {
+      name: 'East Coast Mobile Safety Certificates', short: 'East Coast', site: 'safetycertificates.com.au',
+      rows: [
+        R_price('Free quote by phone or quote form. ' + NO_PRICE),
+        R_promise('Lists "Low Pricing" as a step in its process. No price beat offer stated on its homepage.')
+      ]
+    },
+    'asap': {
+      name: 'ASAP Roadworthys', short: 'ASAP', site: 'asaproadworthys.com.au',
+      rows: [
+        R_reviews('Shows a Google review badge. Rating and review count not stated on its homepage.', 'Rating and count shown', '\u2715 No rating or count shown'),
+        R_promise('Says "Guaranteed 100% satisfaction". No price beat offer stated on its homepage.')
+      ]
+    },
+    'rapid': {
+      name: 'Rapid Roadworthys', short: 'Rapid', site: 'rapidroadworthys.com.au',
+      rows: [
+        R_reviews('4.9 from 126 Google reviews.', 'More than 23x the reviews', '\u25BC Far fewer reviews'),
+        R_price('Booking request form. ' + NO_PRICE + ' You call or submit a booking request to find out.'),
+        R_resp('Says it will confirm your booking ASAP.')
+      ]
+    },
+    'mycar': {
+      name: 'mycar', short: 'mycar', site: 'mycar.com.au',
+      rows: [
+        { label: 'Where the inspection happens', pill: 'We come to you',
+          us: 'At your home or work. We come to you.', plus: 'Certificate issued on the spot, usually within about 45 minutes.',
+          them: 'Rego inspections are offered at its Authorised Inspection Stations. Its homepage lists mobile servicing and mobile pre-purchase inspections separately.' }
+      ]
+    }
+  };
+
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- Price in one place ---------- */
+  document.querySelectorAll('[data-price]').forEach(function (el) { el.textContent = CONFIG.priceFrom; });
+
+  /* ---------- URL parameters ---------- */
+  var params = new URLSearchParams(window.location.search);
+  var loc = (params.get('location') || '').replace(/\+/g, ' ').replace(/[^A-Za-z .'\-]/g, '').trim().slice(0, 40);
+  var locEl = document.getElementById('loc');
+  if (locEl) locEl.textContent = loc || CONFIG.defaultArea;          // textContent only: no HTML injection
+  var spotsLoc = document.getElementById('spots-loc');
+  if (spotsLoc) spotsLoc.textContent = loc || 'Queensland';
+
+  var vsParam = (params.get('vs') || '').toLowerCase();
+  var startVs = PROVIDERS[vsParam] ? vsParam : CONFIG.defaultVs;     // only known keys are accepted
+
+  /* =====================================================================
+     COMPARISON UI
+     ===================================================================== */
+  var tabsEl = document.getElementById('vs-tabs');
+  var panelEl = document.getElementById('vs-panel');
+  var currentVs = startVs;
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function buildTabs() {
+    Object.keys(PROVIDERS).forEach(function (key) {
+      var b = el('button', 'vs-tab', PROVIDERS[key].short);
+      b.type = 'button'; b.setAttribute('role', 'tab'); b.dataset.key = key;
+      b.setAttribute('aria-selected', key === currentVs ? 'true' : 'false');
+      b.addEventListener('click', function () { selectVs(key); });
+      tabsEl.appendChild(b);
+    });
+  }
+
+  function cell(who, text, cls) {
+    var c = el('div', 'cell ' + cls, text);
+    c.dataset.who = who;
+    return c;
+  }
+
+  function renderPanel() {
+    var p = PROVIDERS[currentVs];
+    panelEl.textContent = '';
+
+    panelEl.appendChild(el('h3', 'vs-title', 'Auto King vs ' + p.name));
+    panelEl.appendChild(el('p', 'vs-meta', 'Selected points from the homepages of ' + p.site + ' and autoking.com.au.'));
+
+    var list = el('div', 'cmp');
+    p.rows.forEach(function (d) {
+      var row = el('div', 'cmp-row');
+      row.appendChild(el('div', 'cmp-label', d.label));
+      var cells = el('div', 'cmp-cells');
+
+      var us = el('div', 'cell us lead');
+      us.dataset.who = 'Auto King';
+      if (d.pill) us.appendChild(el('span', 'pill', d.pill));
+      us.appendChild(el('span', null, typeof d.us === 'function' ? d.us() : d.us));
+      if (d.plus) us.appendChild(el('span', 'plus', d.plus));
+      cells.appendChild(us);
+
+      var them = el('div', 'cell them');
+      them.dataset.who = p.short;
+      if (d.lose) them.appendChild(el('span', 'lose', d.lose));
+      them.appendChild(el('span', null, d.them));
+      cells.appendChild(them);
+
+      row.appendChild(cells);
+      list.appendChild(row);
+    });
+    panelEl.appendChild(list);
+
+    var cta = el('div', 'vs-cta');
+    var a1 = el('a', 'btn btn-call', 'Send us your ' + p.short + ' quote');
+    a1.href = '#quote';
+    cta.appendChild(a1);
+    panelEl.appendChild(cta);
+
+    /* Hint under the hero buttons + hidden field for Monday.com */
+    var hint = document.getElementById('vs-hint-text');
+    if (hint && vsParam && PROVIDERS[vsParam]) hint.textContent = 'See how Auto King compares with ' + PROVIDERS[vsParam].name;
+    var cw = document.getElementById('quote-form').elements['compared_with'];
+    if (cw) cw.value = currentVs;
+  }
+
+  function selectVs(key) {
+    currentVs = key;
+    tabsEl.querySelectorAll('.vs-tab').forEach(function (t) {
+      t.setAttribute('aria-selected', t.dataset.key === key ? 'true' : 'false');
+    });
+    renderPanel();
+  }
+
+  var tmDate = document.getElementById('tm-date');
+  if (tmDate) tmDate.textContent = CONFIG.checkedOn;
+
+  buildTabs();
+  renderPanel();
+
+  /* =====================================================================
+     SIGNATURE ANIMATION: inspection scan
+     ===================================================================== */
+  var NS = 'http://www.w3.org/2000/svg';
+  var items = Array.prototype.slice.call(document.querySelectorAll('#checks li'));
+  var markersG = document.getElementById('markers');
+  var clipRect = document.getElementById('clipRect');
+  var scanG = document.getElementById('scanG');
+  var hudNow = document.getElementById('hud-now');
+  var hudTime = document.getElementById('hud-time');
+  var hudBar = document.getElementById('hud-bar');
+  var hudFoot = document.getElementById('hud-foot-text');
+  var stamp = document.getElementById('stamp');
+  var X0 = 40, X1 = 770, DUR = 9000, TOTAL_MIN = 45;
+  var marks = [];
+
+  items.forEach(function (li) {
+    var x = +li.dataset.x, y = +li.dataset.y;
+    var ring = document.createElementNS(NS, 'circle');
+    ring.setAttribute('class', 'ring'); ring.setAttribute('cx', x); ring.setAttribute('cy', y); ring.setAttribute('r', 6);
+    var dot = document.createElementNS(NS, 'circle');
+    dot.setAttribute('class', 'mk'); dot.setAttribute('cx', x); dot.setAttribute('cy', y); dot.setAttribute('r', 6);
+    markersG.appendChild(ring); markersG.appendChild(dot);
+    marks.push({ x: x, li: li, dot: dot, ring: ring, label: li.textContent.trim(), on: false });
+  });
+
+  var raf = null;
+
+  function setFrame(p) {
+    var sx = X0 + p * (X1 - X0);
+    clipRect.setAttribute('width', sx);
+    scanG.setAttribute('transform', 'translate(' + sx + ',0)');
+    hudBar.style.width = (p * 100).toFixed(1) + '%';
+    hudTime.textContent = Math.round(p * TOTAL_MIN) + ' of ' + TOTAL_MIN + ' min';
+    var doneCount = 0, last = null;
+    marks.forEach(function (m) {
+      if (sx >= m.x) {
+        doneCount++; last = m;
+        if (!m.on) {
+          m.on = true;
+          m.dot.classList.add('on'); m.ring.classList.add('on'); m.li.classList.add('done');
+        }
+      }
+    });
+    if (p < 1) {
+      hudNow.textContent = last ? 'Checked: ' + last.label : 'Scanning';
+      hudFoot.textContent = doneCount + ' of 12 areas checked';
+    }
+  }
+
+  function finish() {
+    setFrame(1);
+    hudNow.textContent = 'All 12 areas checked';
+    hudTime.textContent = 'About ' + TOTAL_MIN + ' min';
+    hudFoot.textContent = 'Illustration of a typical inspection. Actual time varies.';
+    stamp.classList.add('show');
+  }
+
+  function reset() {
+    if (raf) cancelAnimationFrame(raf);
+    stamp.classList.remove('show');
+    marks.forEach(function (m) {
+      m.on = false; m.dot.classList.remove('on'); m.ring.classList.remove('on'); m.li.classList.remove('done');
+    });
+    setFrame(0);
+    hudNow.textContent = 'Scanning';
+  }
+
+  function play() {
+    reset();
+    if (reduceMotion) { marks.forEach(function (m) { m.on = false; }); finish(); return; }
+    var t0 = null;
+    function tick(ts) {
+      if (t0 === null) t0 = ts;
+      var p = Math.min(1, (ts - t0) / DUR);
+      setFrame(p);
+      if (p < 1) raf = requestAnimationFrame(tick); else finish();
+    }
+    raf = requestAnimationFrame(tick);
+  }
+
+  document.getElementById('replay').addEventListener('click', play);
+
+  var hud = document.getElementById('hud');
+  if ('IntersectionObserver' in window) {
+    var started = false;
+    var io2 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && !started) { started = true; io2.disconnect(); play(); }
+      });
+    }, { threshold: 0.45 });
+    io2.observe(hud);
+  } else { play(); }
+
+  /* =====================================================================
+     STATS: rating ring + count-up
+     ===================================================================== */
+  var statEls = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
+  var ringFill = document.getElementById('ring-fill');
+  var CIRC = 2 * Math.PI * 52, RATING = 4.9 / 5;
+  function fmt(n, dec) { return n.toLocaleString('en-AU', { minimumFractionDigits: dec, maximumFractionDigits: dec }); }
+  function setStat(el, v) { el.textContent = fmt(v, +(el.dataset.dec || 0)) + (el.dataset.suffix || ''); }
+  function setStatsFinal() {
+    statEls.forEach(function (el) { setStat(el, +el.dataset.count); });
+    ringFill.style.strokeDasharray = CIRC; ringFill.style.strokeDashoffset = CIRC * (1 - RATING);
+  }
+  function animateStats() {
+    var t0 = null, D = 1700;
+    function tick(ts) {
+      if (t0 === null) t0 = ts;
+      var p = Math.min(1, (ts - t0) / D), e = 1 - Math.pow(1 - p, 3);
+      statEls.forEach(function (el) { setStat(el, +el.dataset.count * e); });
+      ringFill.style.strokeDashoffset = CIRC * (1 - RATING * e);
+      if (p < 1) requestAnimationFrame(tick); else setStatsFinal();
+    }
+    requestAnimationFrame(tick);
+  }
+  ringFill.style.strokeDasharray = CIRC;
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    setStatsFinal();
+  } else {
+    statEls.forEach(function (el) { setStat(el, 0); });
+    ringFill.style.strokeDashoffset = CIRC;
+    var io3 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { io3.disconnect(); animateStats(); } });
+    }, { threshold: 0.4 });
+    io3.observe(document.getElementById('stats'));
+  }
+
+  /* Vehicles: light up in sequence, and tapping one pre-selects it in the quote form */
+  var vehBox = document.getElementById('vehicles');
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    vehBox.classList.add('in');
+  } else {
+    var io5 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { vehBox.classList.add('in'); io5.disconnect(); } });
+    }, { threshold: 0.35 });
+    io5.observe(vehBox);
+  }
+  vehBox.querySelectorAll('.veh-chip').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var sel = document.getElementById('quote-form').elements['vehicle_type'];
+      if (sel) sel.value = btn.dataset.vehicle;
+      document.getElementById('quote').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+    });
+  });
+
+  /* Gallery: scan-reveal when each photo enters view */
+  var shots = Array.prototype.slice.call(document.querySelectorAll('.shot'));
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    shots.forEach(function (s) { s.classList.add('in'); });
+  } else {
+    var io4 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io4.unobserve(e.target); } });
+    }, { threshold: 0.2 });
+    shots.forEach(function (s) { io4.observe(s); });
+  }
+
+  /* =====================================================================
+     ATTRIBUTION + FORM
+     ===================================================================== */
+  function keep(key) {
+    var v = params.get(key);
+    try {
+      if (v) sessionStorage.setItem('ak_' + key, v);
+      return v || sessionStorage.getItem('ak_' + key) || '';
+    } catch (e) { return v || ''; }
+  }
+  var form = document.getElementById('quote-form');
+  ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid'].forEach(function (k) {
+    if (form.elements[k]) form.elements[k].value = keep(k);
+  });
+  form.elements['landing_page'].value = window.location.pathname + window.location.search;
+
+  var status = document.getElementById('form-status');
+  function show(msg, type) { status.textContent = msg; status.className = 'form-status show ' + type; }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (form.elements['website'].value) return;                       // honeypot
+    var name = form.elements['name'].value.trim();
+    var phone = form.elements['phone'].value.trim();
+    var suburb = form.elements['suburb'].value.trim();
+    var vehicle = form.elements['vehicle_type'].value;
+    if (!name || phone.replace(/\D/g, '').length < 8 || !suburb || !vehicle) {
+      show('Please enter your name, a phone number we can call, your suburb and your vehicle type.', 'err');
+      return;
+    }
+    if (CONFIG.formEndpoint.indexOf('REPLACE_') === 0) {
+      show('Template mode: connect the form endpoint before launch. Nothing was sent.', 'err');
+      return;
+    }
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true;
+    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+      .then(function (r) {
+        if (!r.ok) throw new Error('bad status');
+        show('Thanks ' + name.split(' ')[0] + '. We will call you back within minutes to confirm your booking.', 'ok');
+        form.reset();
+        /* Reuses the existing GA4 event name "form_submit". SEO Jay needs a matching GTM Custom Event trigger. */
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'form_submit', form_id: 'competitor_lp_quote', service: 'roadworthy' });
+      })
+      .catch(function () { show('Sorry, that did not send. Please call us on 1300 26 51 18 and we will sort your quote now.', 'err'); })
+      .then(function () { btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
